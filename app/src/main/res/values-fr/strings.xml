@@ -5,10 +5,20 @@
     <string name="buttonText">Je suis un bouton</string>
 
     <string name="login">s\'identifier</string>
+    <string name="defaultEmail"></string>
     <string name="loginName">identifiant</string>
     <string name="password">mot de passe</string>
 
     <string name="radioButton">Bouton Radio</string>
     <string name="checkBox">Case a Couche</string>
     <string name="Switch">Qu\'est-ce que cela fait?</string>
+
+    <string name="switchOn">Commutateur est Allume</string>
+    <string name="switchOff">Commutateur est Eteint</string>
+
+    <string name="dialogTitle">List Items Activity</string>
+    <string name="dialogMessage">Voulez-vous terminer l\'activite?</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Annuler</string>
+    <string name="response">Voici ma reponse</string>
 </resources>

@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/loginName"
+        android:text="@string/defaultEmail"
         android:inputType="textEmailAddress" />
 
     <TextView
@@ -33,6 +33,12 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"/>
 
     <ImageView
         android:id="@+id/flagImageView"
