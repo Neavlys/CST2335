@@ -30,6 +30,17 @@ public class StartActivity extends Activity {
                 startActivityForResult(intent, 50);
             }
         });
+
+        Button startChatBtn = (Button)findViewById(R.id.startChatBtn);
+        startChatBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(activityName, "User clicked Start Chart");
+
+                Intent intent = new Intent(StartActivity.this, ChatWindow.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

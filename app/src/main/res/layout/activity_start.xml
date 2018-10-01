@@ -22,4 +22,10 @@
         android:layout_height="wrap_content"
         android:text="@string/buttonText" />
 
+    <Button
+        android:id="@+id/startChatBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/startChatBtn"/>
+
 </LinearLayout>
