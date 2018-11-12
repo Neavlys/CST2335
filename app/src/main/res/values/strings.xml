@@ -23,4 +23,6 @@
 
     <string name="startChatBtn">Start Chat</string>
     <string name="sendButton">Send</string>
+
+    <string name="startWeatherForecastBtn">Weather Forecast</string>
 </resources>

@@ -24,4 +24,5 @@
 
     <string name="startChatBtn">Demarrer la Discussion</string>
     <string name="sendButton">Envoyer</string>
+    <string name="startWeatherForecastBtn">Prevision Meteorologiques</string>
 </resources>

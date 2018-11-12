@@ -7,9 +7,9 @@ import android.util.Log;
 
 public class ChatDatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "DatabaseFileName";
-    public static final int VERSION_NUM = 1;
+    public static final int VERSION_NUM = 2;
     public static final String TABLE_NAME = "Items";
-    public static final String KEY_ID = "( _id INTEGER PRIMARY KEY AUTOINCREMENT,";
+    public static final String KEY_ID = "_id";
     public static final String KEY_MESSAGE = "MESSAGE";
 
     public ChatDatabaseHelper(Context ctx) {
@@ -18,7 +18,7 @@ public class ChatDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL( "CREATE TABLE " + TABLE_NAME + KEY_ID + KEY_MESSAGE + ")");
+        db.execSQL( "CREATE TABLE " + TABLE_NAME + "( " + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_MESSAGE + ")");
         Log.i("ChatDatabaseHelper", "Calling OnCreate");
     }
 
