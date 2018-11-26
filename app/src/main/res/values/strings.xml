@@ -25,4 +25,6 @@
     <string name="sendButton">Send</string>
 
     <string name="startWeatherForecastBtn">Weather Forecast</string>
+
+    <string name="dialog_Title">Do you want to go back?</string>
 </resources>

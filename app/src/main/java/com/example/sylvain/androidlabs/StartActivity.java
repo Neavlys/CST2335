@@ -16,6 +16,8 @@ public class StartActivity extends Activity {
         return this;
     }
 
+    Button testToolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +49,15 @@ public class StartActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(StartActivity.this, WeatherForecast.class);
+                startActivity(intent);
+            }
+        });
+
+        testToolbar = (Button)findViewById(R.id.testToolbar);
+        testToolbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StartActivity.this, TestToolbar.class);
                 startActivity(intent);
             }
         });

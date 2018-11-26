@@ -107,17 +107,15 @@ public class WeatherForecast extends Activity {
                     FileInputStream fis = null;
                     try {    fis = openFileInput(iconName + ".png");   }
                     catch (FileNotFoundException e) {    e.printStackTrace();  }
-                    Bitmap bm = BitmapFactory.decodeStream(fis);
-                    currentWeather = bm;
+                    currentWeather = BitmapFactory.decodeStream(fis);
                     Log.i("Looking For Filename:", iconName + ".png");
                     Log.i("Image Found: ", "locally");
                 } else {
-                    Bitmap image  = httpUtils.getImage(imageUrl);
+                    currentWeather  = httpUtils.getImage(imageUrl);
                     FileOutputStream outputStream = openFileOutput( iconName + ".png", Context.MODE_PRIVATE);
-                    image.compress(Bitmap.CompressFormat.PNG, 80, outputStream);
+                    currentWeather.compress(Bitmap.CompressFormat.PNG, 80, outputStream);
                     outputStream.flush();
                     outputStream.close();
-                    currentWeather = image;
                     Log.i("Looking For Filename:", iconName + ".png");
                     Log.i("Image Found: ", "download");
                 }

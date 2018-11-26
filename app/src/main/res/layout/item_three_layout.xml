@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/toolBarImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icons8_businessman_50"/>
+
+    <TextView
+        android:id="@+id/toolBarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is your new message?" />
+
+    <EditText
+        android:id="@+id/toolBarText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type here" />
+
+
+
+</LinearLayout>
